@@ -4,6 +4,7 @@
   position: sticky;
   top: 0;
   align-items: center;
+  justify-content: center;
   justify-content: space-between;
   background-color: #214550;
   background: linear-gradient(to left, #4f5a64, #687786);
@@ -146,6 +147,6 @@ a {
   height: 100%;
 }
 .top-nav img {
-  width: 15%;
+  width: 17.5%;
   height: auto;
 }
