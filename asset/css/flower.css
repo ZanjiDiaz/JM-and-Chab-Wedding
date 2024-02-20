@@ -71,6 +71,7 @@ body {
 .flowers {
   position: relative;
   transform: scale(0.9);
+  will-change: transform;
 }
 .flower {
   position: absolute;
@@ -78,16 +79,20 @@ body {
   transform-origin: bottom center;
   z-index: 10;
   --fl-speed: 0.8s;
+  will-change: transform;
 }
 .flower--1 {
   animation: moving-flower-1 4s linear infinite;
+  will-change: transform;
 }
 .flower--1 .flower__line {
   height: 70vmin;
   animation-delay: 0.3s;
+  will-change: transform;
 }
 .flower--1 .flower__line__leaf--1 {
   animation: blooming-leaf-right var(--fl-speed) 1.6s backwards;
+  will-change: transform;
 }
 .flower--1 .flower__line__leaf--2 {
   animation: blooming-leaf-right var(--fl-speed) 1.4s backwards;
@@ -108,6 +113,7 @@ body {
   left: 50%;
   transform: rotate(20deg);
   animation: moving-flower-2 4s linear infinite;
+  will-change: transform;
 }
 .flower--2 .flower__line {
   height: 60vmin;
