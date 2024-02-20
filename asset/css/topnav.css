@@ -94,7 +94,7 @@ a {
   transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1250px) {
   .menu-button-container {
     display: flex;
     z-index: 1000;
