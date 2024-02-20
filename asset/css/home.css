@@ -183,21 +183,106 @@ hr {
 }
 
 /*  */
+/* GIFT */
 
+.gift-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5vh;
+}
+.gift-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f0ec;
+  width: 50%;
+  height: 15vh;
+  border-radius: 1vh;
+  box-shadow: 0px 6px 49px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 6px 49px 0px rgba(0, 0, 0, 0.25);
+  margin-block: 2.5vh;
+}
+.gift-img img {
+  width: 100%;
+  height: auto;
+}
+.gift-details {
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gt1 {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 3vh;
+  color: var(--primary-color);
+}
+
+hr {
+  color: rgba(255, 255, 255, 0.407);
+  width: 75%;
+}
+
+.more-photos {
+  padding-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.mp1 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 2vh;
+  margin-bottom: 1vh;
+}
+.more-photos-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5vh;
+}
+.more-photos-img img {
+  width: 75%;
+  height: auto;
+  box-shadow: 0px 6px 49px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 6px 49px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 1vh;
+  transition: 0.5s ease-in;
+}
+.gift-details {
+  padding-block: 2vh;
+  max-width: 80vw;
+  font-size: 2vh;
+  text-align: justify;
+}
+
+/*  */
 /* FOOTER  */
 
 .footer {
-  background-color: var(--bg-color);
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding-top: 5vh;
 }
 .footer-title {
   font-weight: 600;
-  font-size: 2.25vh;
+  font-size: 2.5vh;
+  color: var(--dark-color);
   text-transform: uppercase;
+  margin-bottom: 2vh;
 }
 .footer-details {
   padding-block: 1vh;
