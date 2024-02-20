@@ -260,9 +260,10 @@ hr {
   transition: 0.5s ease-in;
 }
 .gift-details {
-  padding-block: 2vh;
+  padding-bottom: 2.5vh;
   max-width: 80vw;
-  font-size: 2vh;
+  font-size: 1.5vh;
+  font-style: italic;
   text-align: justify;
 }
 
