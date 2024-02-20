@@ -5,13 +5,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15dvh;
+  margin-top: 15vh;
 }
 #image img {
-  width: 75%;
+  width: 50%;
 }
 #invitation {
-  margin-block: 2.5dvh;
+  margin-block: 2.5vh;
+  max-width: 75%;
+  text-align: center;
 }
 #date {
   display: grid;
@@ -19,10 +21,10 @@ body {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  margin-block: 2.5dvh;
+  margin-block: 2.5vh;
 }
 .inv {
-  font-size: 2.5dvh;
+  font-size: 2.5vh;
   text-transform: uppercase;
   text-align: center;
   font-weight: 300;
@@ -50,27 +52,27 @@ body {
   align-items: center;
 }
 .date {
-  font-size: 2.5dvh;
+  font-size: 2.5vh;
   font-weight: 200;
   text-transform: uppercase;
   color: var(--primary-color);
 }
 #day {
-  font-size: 3dvh;
+  font-size: 3vh;
   padding-inline: 2.5vw;
   border-inline: 1.5px solid var(--primary-color);
 }
 #venue {
-  margin-top: 5dvh;
+  margin-top: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #location {
-  font-size: 2dvh;
+  font-size: 2vh;
   text-align: center;
 }
 
 .venue {
-  font-size: 3dvh;
+  font-size: 3vh;
 }

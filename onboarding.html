@@ -30,11 +30,7 @@
           <br />
           <h1 class="cormorant" id="IDO">I DO</h1>
         </div>
-        <div id="clickScreen">
-          <p class="cormorant" style="color: #fbf8f1; opacity: 1">
-            Click anywhere...
-          </p>
-        </div>
+
         <div class="shape-fragment">
           <img src="./asset/fragment.png" alt="" />
         </div>
@@ -65,11 +61,9 @@
     $("body").ready(function () {
       $("body").animate({ opacity: 1 }, 1000);
     });
+
     setTimeout(function () {
-      $("#clickScreen").addClass("animate-text");
-      $("body").on("click", function () {
-        window.location.href = "home.html";
-      });
-    }, 3500);
+      window.location.href = "home.html";
+    }, 5000);
   </script>
 </html>

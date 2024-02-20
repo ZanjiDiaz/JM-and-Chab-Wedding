@@ -20,7 +20,7 @@ body {
 .logo {
   display: flex;
   justify-content: center;
-  margin-top: 10dvh;
+  margin-top: 10vh;
   opacity: 0;
 }
 .logo img {
