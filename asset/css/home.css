@@ -187,6 +187,7 @@ hr {
 /* FOOTER  */
 
 .footer {
+  background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
   align-items: center;
