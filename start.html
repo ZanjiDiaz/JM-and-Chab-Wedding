@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JM and Chab Wedding</title>
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <link rel="stylesheet" href="./asset/css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="image">
+        <img src="./asset/logo-dark.png" alt="" />
+      </div>
+      <div id="invitation">
+        <p class="cormorant inv">
+          We invite you to share with us a celebration of love and commitment
+        </p>
+      </div>
+      <div id="date">
+        <div class="div1 grid-items">
+          <p class="montserrat date">april</p>
+        </div>
+        <div class="div2 grid-items">
+          <p class="montserrat date">Sunday</p>
+        </div>
+        <div class="div3 grid-items">
+          <p class="montserrat date" id="day">07</p>
+        </div>
+        <div class="div4 grid-items" id="time">
+          <p class="montserrat date">3:30pm</p>
+        </div>
+        <div class="div5 grid-items"><p class="montserrat date">2024</p></div>
+      </div>
+      <div id="venue">
+        <p class="cormorant" id="location">
+          <span class="venue">Villa Encarnacion </span><br />
+          Mulawin Road, Kawayan, Tugatog, Orani, Bataan.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    $("body").ready(function () {
+      $("body").animate({ opacity: 1 }, 1000);
+    });
+    onload = () => {
+      const c = setTimeout(() => {
+        $("body").animate({ opacity: 1 }, 1000);
+        window.location.href = "/onboarding.html";
+        clearTimeout(c);
+      }, 5000);
+    };
+  </script>
+</html>

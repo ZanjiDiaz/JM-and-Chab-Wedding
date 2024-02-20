@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onboarding</title>
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <link rel="stylesheet" href="./asset/css/onboarding.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo"><img src="./asset/logo-dark.png" alt="" /></div>
+      <div class="title">
+        <p id="title" class="cormorant">Wedding Invitation</p>
+      </div>
+      <div class="shape">
+        <div class="shape-title">
+          <h2 id="soon" class="cormorant">
+            You are cordially invited to the wedding of
+          </h2>
+          <h1 id="familyname" class="cormorant">Jan Michael & Chab</h1>
+        </div>
+        <div class="shape-details">
+          <p class="montserrat" id="first-details">
+            <br />
+            This day, we will pledge our love... <br /><br />With the grace of
+            God and with the blessing of our families, we,<br />
+            Jan Michael & Chab, warmly invite you as we say
+          </p>
+          <br />
+          <h1 class="cormorant" id="IDO">I DO</h1>
+        </div>
+        <div style="display: flex; justify-content: center" id="clickScreen">
+          <p class="cormorant" style="color: #fbf8f1; opacity: 1">
+            Click anywhere
+          </p>
+        </div>
+        <div class="shape-fragment">
+          <img src="./asset/fragment.png" alt="" />
+        </div>
+      </div>
+      <div class="inner-shape">
+        <div>
+          <p class="box montserrat" id="box-item">
+            <img src="./asset/box-fragment.png" alt="" width="75" />
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    var body = $("body");
+    var title = $("#title");
+    var inner_secondary = $("#soon");
+    var inner_primary = $("#familyname");
+    var details = $("#first-details");
+
+    var notClicked = true;
+    $("#clickScreen").css("opacity", "0");
+    $("body").ready(function () {
+      $("body").animate({ opacity: 1 }, 1000);
+    });
+    setTimeout(function () {
+      $("#clickScreen").addClass("animate-text");
+      $("body").on("click", function () {
+        window.location.href = "/home.html";
+      });
+    }, 3500);
+  </script>
+</html>
