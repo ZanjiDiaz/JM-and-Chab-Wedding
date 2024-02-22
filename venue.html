@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Venue</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" href="./asset/css/style.css" />
     <link rel="stylesheet" href="./asset/css/topnav.css" />
     <link rel="stylesheet" href="./asset/css/home.css" />
+    <link rel="stylesheet" href="./asset/css/map.css" />
   </head>
   <body>
     <div class="container">
@@ -62,7 +64,7 @@
           </div>
           <div class="venue-details">
             <p class="cormorant vt1">CEREMONY & RECEPTION</p>
-            <p class="montserrat vt2">Villa Encarnacion | 3:30 PM</p>
+            <p class="montserrat vt2">Villa Encarnacion | 3:00 PM</p>
             <p class="montserrat vt3">
               Mulawin Road, Kawayan, Tugatog, Orani, Bataan.
             </p>
@@ -79,8 +81,8 @@
         <hr />
         <div class="more-photos">
           <p class="cormorant mp1">Map</p>
-          <div class="more-photos-img"></div>
         </div>
+        <div class="map-container"><div id="map"></div></div>
       </div>
     </div>
     <footer>
@@ -95,5 +97,32 @@
         <img src="./asset/footer-fragment.png" alt="" />
       </div>
     </footer>
+    <script src="./asset/js/mapsJavaScriptAPI.js" defer async></script>
+    <script>
+      let map;
+
+      async function initMap() {
+        const { Map } = await google.maps.importLibrary("maps");
+
+        map = new Map(document.getElementById("map"), {
+          center: { lat: 14.7991176, lng: 120.5175983 },
+          zoom: 13,
+          maxZoom: 20,
+          minZoom: 10,
+          streetViewControl: false,
+          showRoadLabels: false,
+          zoomControl: true,
+          mapTypeControl: false,
+        });
+        var marker = new google.maps.Marker({
+          position: { lat: 14.7991176, lng: 120.5175983 },
+          map,
+          anchor: new google.maps.Point(15, 15),
+        });
+        guessMarker.setMap(map);
+      }
+
+      initMap();
+    </script>
   </body>
 </html>
