@@ -4,37 +4,43 @@
   I've taken some inspiration by Yup Nguyen's Artwork: https://dribbble.com/shots/11096994-Virtual-Garden.
   Made with Pure CSS & ♥
 -->
-<head>
-  <link rel="stylesheet" href="./asset/css/flower.css" />
-  <link rel="icon" type="image/x-icon" href="./asset/logo-dark.png" />
-  <title>JM and Chab's Wedding</title>
-  <meta name="title" content="JM and Chab's Wedding" />
-  <meta name="description" content="You are invited to our special day!" />
-  <meta property="og:image" content="./asset/logo-dark.png" />
-</head>
-<body class="not-loaded">
-  <div class="logo"><img src="./asset/logo-dark.png" alt="" /></div>
-</body>
-<script
-  src="https://code.jquery.com/jquery-3.7.1.js"
-  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-  crossorigin="anonymous"
-></script>
-<script>
-  onload = () => {
-    const c = setTimeout(() => {
-      document.body.classList.remove("not-loaded");
-      clearTimeout(c);
-    }, 1000);
-  };
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./asset/css/flower.css" />
+    <link rel="icon" type="image/x-icon" href="./asset/logo-dark.png" />
+    <title>JM and Chab's Wedding</title>
+    <meta name="title" content="JM and Chab's Wedding" />
+    <meta name="description" content="You are invited to our special day!" />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/C2bgvjS/logo-dark.png"
+    />
+  </head>
+  <body class="not-loaded">
+    <div class="logo"><img src="./asset/logo-dark.png" alt="" /></div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    onload = () => {
+      const c = setTimeout(() => {
+        document.body.classList.remove("not-loaded");
+        clearTimeout(c);
+      }, 1000);
+    };
 
-  setTimeout(function () {
-    window.location.href = "start.html";
-  }, 5000);
-  setTimeout(function () {
-    $(".logo").ready(function () {
-      $(".logo").animate({ opacity: 1 }, 3000);
-    });
-  }, 1000);
-</script>
-<script src="./flower.js"></script>
+    setTimeout(function () {
+      window.location.href = "start.html";
+    }, 5000);
+    setTimeout(function () {
+      $(".logo").ready(function () {
+        $(".logo").animate({ opacity: 1 }, 3000);
+      });
+    }, 1000);
+  </script>
+  <script src="./flower.js"></script>
+</html>
