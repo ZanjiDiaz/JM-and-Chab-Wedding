@@ -43,10 +43,7 @@
   width: 30%;
   height: auto;
 }
-iframe {
-  width: 100vw;
-  height: 102.5vh;
-}
+
 .content {
   margin-top: 30vh;
   padding-top: 7.5vh;
@@ -115,6 +112,7 @@ iframe {
   font-size: 2vh;
   font-weight: 400;
   padding-top: 1vh;
+  text-align: center;
 }
 
 /* VENUE */
@@ -441,6 +439,20 @@ hr {
   max-width: 80vw;
   font-size: 1.5vh;
   text-align: justify;
+}
+iframe {
+  height: 100%;
+  min-width: 100%;
+}
+.gforms {
+  width: 100vw;
+  padding-inline: 5vw;
+}
+/*  */
+
+/* GFORMS */
+iframe .m7w29c.O8VmIc.tIvQIf {
+  background-color: black !important;
 }
 /*  */
 /* FOOTER  */
