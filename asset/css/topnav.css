@@ -21,8 +21,8 @@
   background-color: rgba(0, 0, 0, 0.404);
   width: 100vw;
   z-index: 1000;
-  height: 100%;
-  bottom: 0;
+  height: 100vh;
+  top: 0;
   left: 0;
   position: absolute;
   display: none;
