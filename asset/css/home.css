@@ -48,8 +48,8 @@ a {
 }
 .content {
   margin-top: 30vh;
-  padding-top: 7.5vh;
-  padding-bottom: 7.5vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

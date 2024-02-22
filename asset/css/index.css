@@ -65,6 +65,7 @@ body {
 #venue {
   margin-top: 5vh;
   display: flex;
+  text-transform: uppercase;
   justify-content: center;
   align-items: center;
 }
