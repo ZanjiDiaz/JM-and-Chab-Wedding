@@ -454,8 +454,69 @@ iframe .m7w29c.O8VmIc.tIvQIf {
   background-color: black !important;
 }
 /*  */
-/* FOOTER  */
 
+/* dresscode */
+.dc {
+  padding-top: 2.5vh;
+  padding-bottom: 0;
+}
+.dc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  color: rgba(255, 255, 255, 0.407);
+  width: 75%;
+}
+.dc-details {
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2.5vh;
+  max-width: 80vw;
+  font-size: 1.5vh;
+  text-align: justify;
+}
+.color-container {
+  width: 100vw;
+  padding-block: 5vh;
+  padding-inline: 2.5vh;
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+}
+.color {
+  width: 12.5vw;
+  height: 12.5vw;
+  border-radius: 100%;
+}
+.color-one {
+  background-color: #393f59;
+}
+.color-two {
+  background-color: #677ba0;
+}
+.color-three {
+  background-color: #81a0b5;
+}
+.color-four {
+  background-color: #a2b8cf;
+}
+.color-five {
+  background-color: #bbcde3;
+}
+.color-six {
+  background-color: #ffffff;
+}
+
+/*  */
+/* FOOTER  */
 .footer {
   background-color: var(--primary-color);
   display: flex;
